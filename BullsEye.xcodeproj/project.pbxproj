@@ -21,6 +21,7 @@
 		745F169319B70AC800EBD78D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745F167519B70AC700EBD78D /* UIKit.framework */; };
 		745F169B19B70AC800EBD78D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 745F169919B70AC800EBD78D /* InfoPlist.strings */; };
 		745F169D19B70AC800EBD78D /* BullsEyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745F169C19B70AC800EBD78D /* BullsEyeTests.m */; };
+		74AE335819BA499100E03443 /* SOAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AE335719BA499100E03443 /* SOAboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		745F169819B70AC800EBD78D /* BullsEyeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BullsEyeTests-Info.plist"; sourceTree = "<group>"; };
 		745F169A19B70AC800EBD78D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		745F169C19B70AC800EBD78D /* BullsEyeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BullsEyeTests.m; sourceTree = "<group>"; };
+		74AE335619BA499100E03443 /* SOAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAboutViewController.h; sourceTree = "<group>"; };
+		74AE335719BA499100E03443 /* SOAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				745F168319B70AC700EBD78D /* Main.storyboard */,
 				745F168619B70AC700EBD78D /* SOViewController.h */,
 				745F168719B70AC700EBD78D /* SOViewController.m */,
+				74AE335619BA499100E03443 /* SOAboutViewController.h */,
+				74AE335719BA499100E03443 /* SOAboutViewController.m */,
 				745F168919B70AC700EBD78D /* Images.xcassets */,
 				745F167819B70AC700EBD78D /* Supporting Files */,
 			);
@@ -252,6 +257,7 @@
 			files = (
 				745F168219B70AC700EBD78D /* SOAppDelegate.m in Sources */,
 				745F168819B70AC700EBD78D /* SOViewController.m in Sources */,
+				74AE335819BA499100E03443 /* SOAboutViewController.m in Sources */,
 				745F167E19B70AC700EBD78D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
