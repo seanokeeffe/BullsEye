@@ -38,7 +38,23 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [self startNewRound];
+    [self startNewRound]; // start the game
+    
+    // Custom slider button image
+    UIImage *thumbImageNormal = [UIImage imageNamed:@"SliderThumb-Normal"];
+    [_slider setThumbImage:thumbImageNormal forState:UIControlStateNormal];
+    
+    // Custom slider button image when highlighted
+    UIImage *thumbImageHighlighted = [UIImage imageNamed:@"SliderThumb-Highlighted"];
+    [_slider setThumbImage:thumbImageHighlighted forState:UIControlStateHighlighted];
+    
+    // Custom slider left of the button
+    UIImage *trackLeftImage = [[UIImage imageNamed:@"SliderTrackLeft"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 14, 0, 14)];
+    [_slider setMinimumTrackImage:trackLeftImage forState:UIControlStateNormal];
+    
+    // Custom slider right of the button
+    UIImage *trackRightImage = [[UIImage imageNamed:@"SliderTrackRight"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 14, 0, 14)];
+    [_slider setMaximumTrackImage:trackRightImage forState:UIControlStateNormal];
     
 }
 
