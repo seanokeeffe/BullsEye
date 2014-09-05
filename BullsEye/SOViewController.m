@@ -142,4 +142,28 @@
     
 }
 
+/**
+ * Called when the 'Start Over' button is clicked
+ */
+- (IBAction)startOver
+{
+    
+    [self startNewGame];
+    
+}
+
+/**
+ * A method that clears the users stats and starts a new game
+ */
+- (void)startNewGame
+{
+    
+    // reset the user stats
+    _score = 0;
+    _round = 0;
+    
+    // start a new round
+    [self startNewRound];
+    
+}
 @end
