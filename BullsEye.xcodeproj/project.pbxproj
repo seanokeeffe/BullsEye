@@ -22,6 +22,7 @@
 		745F169B19B70AC800EBD78D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 745F169919B70AC800EBD78D /* InfoPlist.strings */; };
 		745F169D19B70AC800EBD78D /* BullsEyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745F169C19B70AC800EBD78D /* BullsEyeTests.m */; };
 		74AE335819BA499100E03443 /* SOAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AE335719BA499100E03443 /* SOAboutViewController.m */; };
+		74AE335A19BA542A00E03443 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 74AE335919BA542A00E03443 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		745F169C19B70AC800EBD78D /* BullsEyeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BullsEyeTests.m; sourceTree = "<group>"; };
 		74AE335619BA499100E03443 /* SOAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAboutViewController.h; sourceTree = "<group>"; };
 		74AE335719BA499100E03443 /* SOAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAboutViewController.m; sourceTree = "<group>"; };
+		74AE335919BA542A00E03443 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		745F167719B70AC700EBD78D /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				74AE335919BA542A00E03443 /* BullsEye.html */,
 				745F168019B70AC700EBD78D /* SOAppDelegate.h */,
 				745F168119B70AC700EBD78D /* SOAppDelegate.m */,
 				745F168319B70AC700EBD78D /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				745F168A19B70AC700EBD78D /* Images.xcassets in Resources */,
+				74AE335A19BA542A00E03443 /* BullsEye.html in Resources */,
 				745F167C19B70AC700EBD78D /* InfoPlist.strings in Resources */,
 				745F168519B70AC700EBD78D /* Main.storyboard in Resources */,
 			);

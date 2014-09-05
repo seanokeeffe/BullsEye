@@ -37,6 +37,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // get the html file
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"BullsEye" ofType:@"html"];
+    // get the data from the html file
+    NSData *htmlData = [NSData dataWithContentsOfFile:htmlFile];
+    // set up a local url
+    NSURL *baseURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
+    // display the web content
+    [_webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:baseURL];
 }
 
 - (void)didReceiveMemoryWarning
