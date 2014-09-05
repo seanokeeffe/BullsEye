@@ -174,7 +174,17 @@
 - (IBAction)startOver
 {
     
+    // create a transition
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionFade;
+    transition.duration = 1;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    
+    // start the new game
     [self startNewGame];
+    
+    // add the transition animation
+    [self.view.layer addAnimation:transition forKey:nil];
     
 }
 
