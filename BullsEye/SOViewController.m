@@ -23,6 +23,16 @@
     int _round; // the number of times the player has played
 }
 
+/**
+ * Hide the top status bar
+ */
+- (BOOL)prefersStatusBarHidden
+{
+    
+    return YES;
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -166,4 +176,5 @@
     [self startNewRound];
     
 }
+
 @end
