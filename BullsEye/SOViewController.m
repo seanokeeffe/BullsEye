@@ -74,10 +74,8 @@
     NSString *message = [NSString stringWithFormat:@"You scored %d points.", points];
     
     // construct the alert and display it
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alertView show];
-    
-    [self startNewRound];
     
 }
 
@@ -130,6 +128,17 @@
     int difference = abs(_targetValue - _currentValue);
     
     return difference;
+    
+}
+
+/**
+ * When the alert view is dismissed this method is called.
+ * It resets the game but ensures that it won't happen till the alert is dismissed
+ */
+- (void) alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+
+    [self startNewRound];
     
 }
 

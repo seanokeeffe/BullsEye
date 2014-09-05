@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SOViewController : UIViewController
+@interface SOViewController : UIViewController <UIAlertViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UISlider *slider;
 
