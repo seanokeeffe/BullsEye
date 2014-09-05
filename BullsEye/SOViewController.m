@@ -45,14 +45,36 @@
 - (IBAction)showAlert
 {
     
+    // calculate the difference and points earned
     int difference = [self calcDifference];
     int points = 100 - difference;
+    
+    // add to user stats
     _score += points;
     _round += 1;
+    
+    // customize title of alert based on user performance
+    // also add bonus points for good play
+    NSString *title;
+    if ( difference == 0 ) {
+        title = @"Perfect!";
+        points += 100;
+    } else if ( difference < 5 ) {
+        title = @"You almost had it!";
+        if ( difference == 1 ) {
+            points += 50;
+        }
+    } else if ( difference < 10 ) {
+        title = @"Pretty good!";
+    } else {
+        title = @"Not even close ... ";
+    }
+    
+    // construct the alert message
     NSString *message = [NSString stringWithFormat:@"You scored %d points.", points];
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello World" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    
+    // construct the alert and display it
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alertView show];
     
     [self startNewRound];
